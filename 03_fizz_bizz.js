@@ -8,6 +8,24 @@
 
 function fizzBuzz(input) {
   // 把你的解答寫在這裡。要記得 return 喔。
+  let result='';
+  for(n=1;n<=input;n++){
+    if (n>1){
+      result+=' '
+    }  
+    if (n %3==0 && n %5==0){
+      result+='FizzBuzz'
+    }
+    else if (n %3==0){
+      result+='Fizz'
+    }
+    else if (n %5==0){
+      result+='Buzz'
+    }
+    else {
+      result+=n
+    }
+  }
+  return result;
 }
-
 module.exports = {fizzBuzz};
